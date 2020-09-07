@@ -1,11 +1,5 @@
 # OpenCore Gigabyte Z390M Gaming
-An OpenCore config of hackintosh, about Gigabyte Z390M Gaming.
 
-
-![info](Schermata 2020-09-07 alle 22.59.12.png)
-
-
-You can see my change log [here](./doc/changelog.md).
 ## Computer Configuration
 Component | Brank
 -|-
