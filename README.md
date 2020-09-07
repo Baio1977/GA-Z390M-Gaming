@@ -20,12 +20,7 @@ Case | Banchetto
 - High Speed USB Charge also working, enable by `USBPower.kext`.
 - Sleep is fine, thanks to Gigabyte Z390M Gaming, it really saved my time.
 
-## Pre-Work (VERY IMPORTANT!)
-- Make sure you have [**disabled CFG Lock**](https://blog.xjn819.com/?p=317).
-- Make sure **GENERATE NEW Serial Number & SmUUID** by yourself.
-
-## BIOS Changes
-Comes from [tonymacx86](https://www.tonymacx86.com/threads/success-jbarnettes-build-gigabyte-z390-m-gaming-i9-9900k-sapphire-rx-vega-64-8gb-32gb-ram-macos-10-14-3-w-usb3-working.273381/).
+## BIOS F9k Beta Changes
 
 - Save & Exit
     - Load Optimized Defaults then make (or confirm) the following settings -- important settings in **bold**:
@@ -48,10 +43,10 @@ Comes from [tonymacx86](https://www.tonymacx86.com/threads/success-jbarnettes-bu
     - Network Stack Configuration
         - Network Stack → **Disabled**
 - Chipset
-    - Vt-d → **Disabled**
+    - Vt-d → **Enable**
     - Internal Graphics → **Enabled**
     - DVMT Pre-Alloc → 64M
-    - DVMT Total Gfx Mem → 256M
+    - DVMT Total Gfx Mem → MAX
     - Audio Controller → **Enabled**
     - Above 4G Decoding → **Enabled**
 - Power
