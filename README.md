@@ -1,6 +1,11 @@
 # OpenCore-Gigabyte-Z390M-Gaming
 An OpenCore config of hackintosh, about Gigabyte Z390M Gaming.
 
+
+![info](Schermata 2020-09-07 alle 22.59.12.png)
+
+
+You can see my change log [here](./doc/changelog.md).
 ## Computer Configuration
 Component | Brank
 -|-
@@ -26,6 +31,7 @@ Case | Banchetto
 - Make sure **GENERATE NEW Serial Number & SmUUID** by yourself.
 
 ## BIOS Changes
+Comes from [tonymacx86](https://www.tonymacx86.com/threads/success-jbarnettes-build-gigabyte-z390-m-gaming-i9-9900k-sapphire-rx-vega-64-8gb-32gb-ram-macos-10-14-3-w-usb3-working.273381/).
 
 - Save & Exit
     - Load Optimized Defaults then make (or confirm) the following settings -- important settings in **bold**:
@@ -59,4 +65,4 @@ Case | Banchetto
     - RC6 (Render Standby) → Enabled
 
 ## Special Config
-- USB3.0 is active by kexts/Other/USBPorts.kext. USBInjectALL.kext is unnecessary
+- USB3.0 is active by kexts/Other/USBPorts.kext. USBInjectALL.kext is unnecessary.
