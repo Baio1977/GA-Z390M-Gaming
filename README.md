@@ -1,0 +1,1 @@
+# GA-Z390M-Gaming-I78700-RX590
