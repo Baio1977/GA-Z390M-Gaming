@@ -14,10 +14,9 @@ Case | Banchetto
 
 ## What's working?
 - Both iGPU and eGPU are working fine.
-- **NATIVE NVRAM** is working! I can change my Startup Disk in System Preference. thanks to [acidanthera SSDT-PMC](https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/AcpiSamples/SSDT-PMC.dsl), now `LogoutHook.command` is unnecessary.
+- **NATIVE NVRAM** is working!
 - BlueTooth and Wi-Fi are working fine, because of I brought it on purpose.
-- USBs are working fine, I patch it with `USBPorts.kext`, thanks to hackintool, you can see [my configuration](./doc/USB.md)
-- High Speed USB Charge also working, enable by `USBPower.kext`.
+- USBs are working fine, I patch it with `USBPorts.kext`, thanks to hackintool.
 - Sleep is fine, thanks to Gigabyte Z390M Gaming, it really saved my time.
 
 ## BIOS F9k Beta Changes
@@ -54,4 +53,4 @@ Case | Banchetto
     - RC6 (Render Standby) → Enabled
 
 ## Special Config
-- USB3.0 is active by kexts/Other/USBPorts.kext. USBInjectALL.kext is unnecessary.
+- USB3.0 is active by kexts/Other/USBPorts.kext.
