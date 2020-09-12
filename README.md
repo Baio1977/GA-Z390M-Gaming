@@ -1,5 +1,3 @@
-# OpenCore Gigabyte Z390M Gaming
-
 ## Computer Configuration
 Component | Brank
 -|-
