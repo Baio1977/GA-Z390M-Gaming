@@ -3,7 +3,7 @@
 ## Computer Configuration
 Component | Brank
 -|-
-CPU | Intel i7 9700K
+CPU | Intel i7 8700
 MotherBoard | Gigabyte Z390M Gaming
 Memory | Corsair Vengeance 8G DDR4 3200 x 4
 Graphic Card | Sapphire RX590 2304sp 8G
