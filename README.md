@@ -4,7 +4,7 @@ Component | Brank
 CPU | Intel i7 8700
 MotherBoard | Gigabyte Z390M Gaming
 Memory | Corsair Vengeance 32gb DDR4 3200
-Graphic Card | Sapphire RX590 Nitro+ 8gb
+Graphic Card | Sapphire RX 5700XT Nitro+
 SSD | Samsung 970 Pro 512gb
 Net Card | BCM94360CD + BT
 Power | Corsair RM 750x
