@@ -50,5 +50,14 @@ Case | Banchetto
     - ErP → Disabled
     - RC6 (Render Standby) → Enabled
 
-## Special Config
-- USB3.0 is active by kexts/Other/USBPorts.kext.
+## Credits
+
+- [Acidanthera](https://github.com/acidanthera) for OpenCore and all the lovely hackintosh work.
+- [Apple](https://apple.com) for macOS;
+- [daliansky](https://github.com/daliansky)
+- [Dortiana](https://github.com/dortania)
+- [Hackintoshlifeit](https://github.com/Hackintoshlifeit)
+- [mald0n](https://github.com/MaLd0n)
+- [rehabman](https://github.com/RehabMan)
+
+# If you need help please contact us on [Telegram](https://t.me/HackintoshLife_it) or [Web](https://www.hackintoshlife.it/)
