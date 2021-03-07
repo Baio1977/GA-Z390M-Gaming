@@ -5,13 +5,13 @@
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of iASL4jZ4oa.aml, Sun Jan 10 14:28:47 2021
+ * Disassembly of iASLjAo15p.aml, Sun Mar  7 21:32:31 2021
  *
  * Original Table Header:
  *     Signature        "SSDT"
- *     Length           0x000006BF (1727)
+ *     Length           0x00000611 (1553)
  *     Revision         0x02
- *     Checksum         0x58
+ *     Checksum         0x4F
  *     OEM ID           "HACK"
  *     OEM Table ID     "HackLife"
  *     OEM Revision     0x00000000 (0)
@@ -32,32 +32,6 @@ DefinitionBlock ("", "SSDT", 2, "HACK", "HackLife", 0x00000000)
 
     Scope (\_SB)
     {
-        Device (ALS0)
-        {
-            Name (_HID, "ACPI0008" /* Ambient Light Sensor Device */)  // _HID: Hardware ID
-            Name (_CID, "smc-als")  // _CID: Compatible ID
-            Name (_ALI, 0x012C)  // _ALI: Ambient Light Illuminance
-            Name (_ALR, Package (0x01)  // _ALR: Ambient Light Response
-            {
-                Package (0x02)
-                {
-                    0x64, 
-                    0x012C
-                }
-            })
-            Method (_STA, 0, NotSerialized)  // _STA: Status
-            {
-                If (_OSI ("Darwin"))
-                {
-                    Return (0x0F)
-                }
-                Else
-                {
-                    Return (Zero)
-                }
-            }
-        }
-
         Scope (PCI0)
         {
             Scope (LPCB)
@@ -435,31 +409,25 @@ DefinitionBlock ("", "SSDT", 2, "HACK", "HackLife", 0x00000000)
             }
         }
 
-        If (CondRefOf (PR00))
+        Scope (PR00)
         {
-            If ((ObjectType (PR00) == 0x0C))
+            If (_OSI ("Darwin"))
             {
-                Scope (PR00)
+                Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
                 {
-                    If (_OSI ("Darwin"))
+                    If ((Arg2 == Zero))
                     {
-                        Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
+                        Return (Buffer (One)
                         {
-                            If ((Arg2 == Zero))
-                            {
-                                Return (Buffer (One)
-                                {
-                                     0x03                                             // .
-                                })
-                            }
-
-                            Return (Package (0x02)
-                            {
-                                "plugin-type", 
-                                One
-                            })
-                        }
+                             0x03                                             // .
+                        })
                     }
+
+                    Return (Package (0x02)
+                    {
+                        "plugin-type", 
+                        One
+                    })
                 }
             }
         }
@@ -502,35 +470,6 @@ DefinitionBlock ("", "SSDT", 2, "HACK", "HackLife", 0x00000000)
                 }
             }
         }
-    }
-
-    Method (DTGP, 5, NotSerialized)
-    {
-        If ((Arg0 == ToUUID ("a0b5b7c6-1318-441c-b0c9-fe695eaf949b") /* Unknown UUID */))
-        {
-            If ((Arg1 == One))
-            {
-                If ((Arg2 == Zero))
-                {
-                    Arg4 = Buffer (One)
-                        {
-                             0x03                                             // .
-                        }
-                    Return (One)
-                }
-
-                If ((Arg2 == One))
-                {
-                    Return (One)
-                }
-            }
-        }
-
-        Arg4 = Buffer (One)
-            {
-                 0x00                                             // .
-            }
-        Return (Zero)
     }
 }
 
