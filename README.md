@@ -42,7 +42,7 @@ Case | Banchetto
 - Chipset
     - Vt-d → **Enable**
     - Internal Graphics → **Enabled**
-    - DVMT Pre-Alloc → 64M
+    - DVMT Pre-Alloc → 128M
     - DVMT Total Gfx Mem → MAX
     - Audio Controller → **Enabled**
     - Above 4G Decoding → **Enabled**
