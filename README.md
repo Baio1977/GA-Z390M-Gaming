@@ -122,22 +122,7 @@ These are the device properties to configure the iGPU as display output:
                     <string>Intel UHD Graphics 630</string>
                 </dict>
 ```
-And these are the device properties to setup the iGPU as computing only:
-```
-<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
-<dict>
-    <key>AAPL,ig-platform-id</key>
-    <data>AwDImw==</data>
-    <key>AAPL,slot-name</key>
-    <string>Internal@0,2,0</string>
-    <key>device-id</key>
-    <data>yJsAAA==</data>
-    <key>device_type</key>
-    <string>VGA compatible controller</string>
-    <key>model</key>
-    <string>Intel CoffeeLake-H GT2 [UHD Graphics 630]</string>
-</dict>
-```
+
 ## Credits
 
 - [Acidanthera](https://github.com/acidanthera) for OpenCore and all the lovely hackintosh work.
