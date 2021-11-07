@@ -121,7 +121,7 @@ These are the device properties to configure the iGPU as display output:
                     <key>model</key>
                     <string>Intel UHD Graphics 630</string>
                 </dict>
-
+```
 And these are the device properties to setup the iGPU as computing only:
 ```
 <key>PciRoot(0x0)/Pci(0x2,0x0)</key>
