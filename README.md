@@ -54,7 +54,7 @@ Case | Banchetto
 
 These are the device properties to configure the iGPU as display output:
 ```
-                <key>#PciRoot(0x0)/Pci(0x2,0x0)</key>
+                <key>PciRoot(0x0)/Pci(0x2,0x0)</key>
                 <dict>
                     <key>AAPL,GfxYTile</key>
                     <data>AQAAAA==</data>
