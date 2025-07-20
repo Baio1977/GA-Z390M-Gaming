@@ -43,7 +43,7 @@ Case | Banchetto
     - Network Stack Configuration
         - Network Stack → **Disabled**
 - Chipset
-    - Vt-d → **Disable**
+    - Vt-d → **Enable**
     - Internal Graphics → **Enabled**
     - DVMT Pre-Alloc → 128M
     - DVMT Total Gfx Mem → MAX
