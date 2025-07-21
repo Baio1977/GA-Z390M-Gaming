@@ -20,7 +20,7 @@ Case | Banchetto
 - USBs are working fine, I patch it with `USBPorts.kext`, thanks to hackintool.
 - Sleep is fine, thanks to Gigabyte Z390M Gaming, it really saved my time.
 
-## BIOS F9k Beta Changes
+## BIOS F11a Beta Changes
 
 - Save & Exit
     - Load Optimized Defaults then make (or confirm) the following settings -- important settings in **bold**:
