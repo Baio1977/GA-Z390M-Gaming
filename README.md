@@ -9,7 +9,7 @@ MotherBoard | Gigabyte Z390M Gaming
 Memory | Corsair Vengeance 32gb DDR4 3200
 Graphic Card | Sapphire RX 5700XT Nitro+
 SSD | Samsung 970 Pro 512gb
-Net Card | BCM94360CD + BT
+WI-FI + BT | Intel AX210S
 Power | Corsair RM 750x
 Case | Banchetto 
 
